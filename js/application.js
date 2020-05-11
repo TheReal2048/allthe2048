@@ -232,7 +232,7 @@ function changeRule(add, merge, win) {
 }
 
 function normalAdd() {
-  return Math.random() < 0.9 ? 1 : 2;
+  return Math.random() < 0.9 ? 2 : 4;
 }
 
 function normalMerge(a, b) {
@@ -274,7 +274,7 @@ function fibonacci() {
   var a = 1, b = 1;
   fib.push(a);
   fib.push(b);
-  while (a + b <= 2147483648) {
+  while (a + b <= 75025) {
     var c = a + b;
     fib.push(c);
     a = b;
@@ -297,7 +297,7 @@ function lucas() {
   var a = 2, b = 1;
   fib.push(a);
   fib.push(b);
-  while (a + b <= 2147483648) {
+  while (a + b <= 64079) {
     var c = a + b;
     fib.push(c);
     a = b;
