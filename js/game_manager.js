@@ -71,7 +71,7 @@ GameManager.prototype.addRandomTile = function () {
       check(0, -1, 0, -1);
       check(0, 1, 0, 1);
 
-      if (bvalue == 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096) {bvalue = 1;}
+      if (bvalue == 13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096) {bvalue = 2;}
     }
 
     var tile = new Tile(bcell, bvalue);
@@ -154,7 +154,7 @@ GameManager.prototype.move = function (direction) {
           self.score += Math.round(Math.random() * 2048) + merged.value * merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 0.5) self.won = true;
+          if (merged.value === 65536) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
