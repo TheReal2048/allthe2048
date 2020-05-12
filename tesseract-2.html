@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 in 4D</title>
+
+  <link href="style/tesseract-2.css" rel="stylesheet" type="text/css">
+  <link href="style/tiles.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048 in 4D</h1>
+      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+            <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container level11">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="grid-container level12">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="grid-container level21">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="grid-container level22">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong><br>
+      Use your <strong>arrow keys</strong> to move tiles within each box.<br>
+      Use the <strong>W,A,S,D keys</strong> to move tiles across boxes.<br>
+      (I'm sorry that you can't play it on a smartphone)<br>
+      When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    Created by <a target="_blank" href="https://github.com/maigoakisame">Maigo</a> on Mar. 18, 2014.<br>
+    Based on the <a target="_blank" href="http://gabrielecirulli.github.io/2048">2048</a> game by <a target="_blank" href="http://gabrielecirulli.com">Gabriele Cirulli</a>.<br>
+    Inspired by the <a target="_blank" href="http://joppi.github.io/2048-3D">2048-3D</a> game by <a target="_blank" href="https://github.com/baiqiang">baiqiang</a>.
+    Click here for <a href="theastronomer.github.io/2147483648">2147483648.</a>
+    </p>
+  </div>
+
+  <script src="js_tesseract/animframe_polyfill.js"></script>
+  <script src="js_tesseract/keyboard_input_manager.js"></script>
+  <script src="js_tesseract/html_actuator.js"></script>
+  <script src="js_tesseract/grid.js"></script>
+  <script src="js_tesseract/tile.js"></script>
+  <script src="js_tesseract/local_score_manager.js"></script>
+  <script src="js_tesseract/game_manager_version2.js"></script>
+  <script src="js_tesseract/application_version2.js"></script>
+</body>
+</html>
